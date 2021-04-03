@@ -1,0 +1,819 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+    color: #1d1d1d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 22px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* =============================header============================== */
+.main-header {
+    background: url(../img/main.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+}
+
+.main-header .navbar-toggler {
+    color: #fff;
+}
+
+.main-header .navbar-brand,
+.main-header ul li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-header .navbar-brand {
+    font-size: 41px;
+}
+
+.main-header ul li a {
+    font-size: 17px;
+}
+
+.main-header ul li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+.main-header ul li a:hover::after {
+    transform: scale(1);
+}
+
+.main-header-text {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    max-width: 600px;
+    color: #fff;
+    padding: 20px;
+}
+
+.main-header-buttons {
+    padding-left: 30px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-header-buttons .btn {
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+    opacity: .6;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+    transition: all .5s;
+}
+
+.main-header-buttons .btn:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-pink {
+    background-color: #f42267;
+}
+
+.btn-violet {
+    background-color: #69328e;
+}
+
+
+/* -----------------.section-watch-------------------- */
+
+.section-watch {
+    background: url(../img/world_map.png) center no-repeat;
+    background-size: cover;
+}
+
+.section-watch h3,
+.section-watch h4 {
+    color: #484848;
+}
+
+.section-tabs .nav-pills {
+    margin-bottom: 20px;
+}
+
+.btn-shadow {
+    box-shadow: 0 9px 0 #EF5B8D;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    transition: all .7s;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 4.5px 0 #EF5B8D;
+    color: silver;
+    background-color: #723489;
+}
+
+.section-tabs .nav-pills .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #484848;
+
+}
+
+.section-tabs .nav-pills .nav-item .nav-link.active {
+    background-color: #f42267;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+/* ----------------------- .section-progress ------------------------------*/
+.section-progress {
+    background-color: #242457;
+    color: #fffafa;
+    font-size: 15px;
+    padding: 0;
+}
+
+.section-progress i {
+    font-size: 64px;
+}
+
+.section-progress .num {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+}
+
+.section-progress h4 {
+    font-size: 30px;
+    height: 108px; /*для выравнивания заголовков-высота контейнера*/
+    overflow: hidden;
+    text-align: center;
+}
+
+.section-progress .progress-item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-progress .progress-item:hover {
+    background-color: #555588;
+    transition: all .9s;
+}
+
+.section-progress span {
+    font-weight: 800;
+    color: #000A16;
+    text-transform: uppercase;
+}
+
+/* ---------------------section-Lets --------------------- */
+.section-Lets {
+    background: url(../img/letsgrow1.jpg) center no-repeat;
+    background-size: cover;
+    color: snow;
+
+}
+
+/* ---------------------  section-design  ----------------------- */
+
+
+.section-design h3,
+.section-design h4 {
+    color: #484848;
+}
+
+.section-design span i {
+    font-size: 54px;
+    background: linear-gradient(45deg, rgba(255, 0, 32, .7) 0%, rgba(68, 26, 130, .8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 26px;
+}
+
+.section-design h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #484848;
+    margin: 10px 0;
+}
+
+.section-design p {
+    font-size: 14px;
+}
+
+.embed-responsive {
+    position: relative;
+    border-radius: 14px;
+}
+
+
+/* #videoPlayBtn{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	background: url(../img/play.png) center no-repeat;
+} */
+
+
+/* ----------------------- .section-work ------------------------------*/
+
+.section-work {
+    background-color: #E2E5DE;
+    color: #333333;
+}
+
+.section-work .nav-pills {
+    margin: 30px 0;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery a img {
+    transition: all 0.5s;
+}
+
+.gallery a:hover img {
+    box-shadow: 0 15px 32px -15px rgba(68, 26, 130, .9);
+}
+
+
+/* ------------------------------------- .section-reviews ---------------------- */
+/*мой слайдер
+
+
+эффект перехода изображений слайдера
+.carousel-item{
+	transition: transform 2s ease;
+	opacity .9s ease-out;
+} 
+
+.section-reviews{
+	padding: 0;
+}
+*/
+
+.section-reviews {
+    background: url(../img/reviews_bg.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.section-reviews .carousel-caption {
+    top: 5%;
+    bottom: auto;
+    text-align: left;
+
+}
+
+.section-reviews .blockquote {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 70px;
+}
+
+.section-reviews .blockquote::before {
+    content: '\201C';
+    float: left;
+    font-size: 160px;
+    font-weight: 500;
+    /* font-style: italic; */
+    color: #F42267;
+    position: absolute;
+    top: -90px;
+    left: -40px;
+
+}
+
+.blockquote-footer {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.carousel-indicators li {
+    background-color: rgb(123, 102, 156);
+    height: 7px;
+    width: 40px;
+    border-radius: 1em;
+}
+
+.carousel-indicators .active {
+    background-color: #F42267;
+    height: 7px;
+    width: 40px;
+}
+
+
+/* --------------------------- .section-form --------------------------- */
+
+.section-form {
+    background: url(../img/form_bg.jpg) center no-repeat;
+    background-size: cover;
+    color: seashell;
+}
+
+.section-form h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-form form {
+    margin-top: 50px;
+}
+
+.section-form .btn-violet {
+    background-color: #4b2d7f;
+
+}
+
+.btn-violet.btn-shadow {
+    box-shadow: 0 7px 0 #a57ee9;
+    margin-top: -1px;
+    padding: 8px 20px;
+}
+
+.btn-violet.btn-shadow:hover {
+    background: #291a44;
+    box-shadow: 0 5px 0 #815ebe;
+}
+
+.section-form .form-control {
+    height: 46px;
+    background-color: rgba(255, 255, 238, .25);
+    color: #000000;
+    border: 0;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-bottom: 18px;
+}
+
+.section-form .form-control::placeholder {
+    color: #fff;
+}
+
+.section-form .form-control:focus {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 238, .5);
+}
+
+/* --------------------------- footer -------------------------- */
+
+.footer,
+.copyright {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    background: url(../img/world_map.png) center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.footer h5 {
+    font-size: 25px;
+    color: #4b2d7f;
+    font-weight: 700;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #001440;
+}
+
+.footer-images img {
+    margin-bottom: 20px;
+    border-radius: 1em;
+}
+
+.copyright {
+    background-color: #E1DFE0;
+    padding: 25px 0;
+}
+
+.copyright a,
+.copyright span {
+    color: #001440;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    font-style: italic;
+
+}
+
+.copyright a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #4b2d7f;
+    height: 2px;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+.copyright a:hover::after {
+    text-decoration: underline;
+    transform: scale(1);
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    border-radius: 5px;
+    display: none;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    z-index: 1001;
+    color: rgb(86, 12, 214);
+    transition: all .7s;
+    background-color: rgb(235, 78, 78);
+
+    cursor: pointer;
+}
+
+.scrollToTop:hover {
+    background-color: rgb(86, 12, 214);
+    color: rgb(235, 78, 78);
+    text-decoration: none;
+    outline: none;
+    border: 1px solid rgb(148, 15, 15);
+}
+
+/* -------------------------------- BLOG ------------------------------ */
+
+.bg-dark {
+    background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+}
+
+.bg-dark ul li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+.bg-dark ul li a:hover::after {
+    transform: scale(1);
+}
+
+.section-content {
+    padding: 40px 0;
+}
+
+.article-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+}
+
+.article-preview:hover {
+    box-shadow: 0 14px 30px -15px rgba(68, 46, 130, .75);
+}
+
+.article-preview h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.article-preview a {
+    color: #484848;
+    transition: all .5s;
+}
+
+.article-preview a:hover {
+    color: #f42267;
+    text-decoration: none;
+}
+
+.article-date {
+    color: #442E82;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.thumb {
+    border: 3px solid #777696;
+    box-shadow: 0 0 10px rgba(148, 15, 15, .75);
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.fa-calendar-alt {
+    margin-right: 10px;
+}
+
+.article-preview .more {
+    color: #442E82;
+}
+
+.article-preview .more:hover {
+    color: #f42267;
+    text-decoration: underline;
+}
+
+.widget-categories ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.widget-categories ul li::before {
+    content: '\f138';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #f42267;
+    font-size: 14px;
+}
+
+.widget-categories ul li a {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #656484;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all .7s;
+}
+
+.widget-categories ul li a:hover {
+    color: #f42267;
+}
+
+.widget-title {
+    font-size: 20px;
+    color: #777696;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.widget-title::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 30px;
+    background-color: #f42267;
+}
+
+.pagination .page-link {
+    color: #f42267;
+    transition: all .7s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.pagination .page-link:hover {
+    background-color: #f42267;
+    color: #fff;
+    border-color: #442E82;
+    border-radius: 5px;
+    transition: all .7s;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #442E82;
+    border-color: #f42267;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .main-header-text {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    section,
+    .footer {
+        padding: 40px 0;
+    }
+
+    .section-reviews h3,
+    .section-reviews h4 {
+        font-size: 25px;
+    }
+
+    .section-reviews .blockquote {
+        font-size: 16px;
+    }
+
+    .section-reviews .blockquote::before {
+        font-size: 120px;
+        top: -70px;
+        left: -16px;
+    }
+
+    .scrollToTop {
+        bottom: 45px;
+        right: 30px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 991px) {
+    .main-header .navbar-nav {
+        background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .main-header-text {
+        left: 0;
+        margin: 0 20px;
+        max-width: 100%;
+    }
+
+    h3, h4 {
+        font-size: 30px;
+    }
+
+    .section-progress .progress-item {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-reviews .blockquote {
+        margin: 25px 0 10px;
+    }
+
+    .blockquote-footer {
+        margin-top: 16px;
+    }
+
+    .section-reviews .blockquote::before {
+        font-size: 100px;
+        top: -50px;
+        left: -12px;
+    }
+
+    .scrollToTop {
+        bottom: 30px;
+        right: 20px;
+        color: rgba(86, 12, 214, 0.25);
+        background-color: rgba(235, 78, 78, 0.25);
+
+    }
+
+    .scrollToTop:hover {
+        background-color: rgba(86, 12, 214, 0.25);
+        color: rgb(235, 78, 78);
+        border: 1px solid rgba(148, 15, 15, 0.25);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-header-text {
+        top: 90px;
+    }
+
+    .main-header-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .main-header-buttons .btn:last-child {
+        margin-top: 0;
+    }
+
+    .btn-shadow {
+        box-shadow: 0 4px 0 #EF5B8D;
+        border-radius: 8px;
+        padding: 10px 15px;
+        margin-top: 12px;
+        transition: all .7s;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .section-reviews .carousel-caption {
+        position: static;
+        width: 70%;
+        margin: auto;
+    }
+
+    .carousel-indicators {
+        margin-top: 15px;
+        margin-bottom: 6px;
+    }
+
+    .blockquote-footer {
+        margin-top: 8px;
+    }
+
+    .section-reviews .blockquote {
+        margin: 25px 0 30px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .main-header .navbar-brand {
+        font-size: 28px;
+    }
+
+    .section-watch .nav-pills .nav-link {
+        padding: 8px 16px;
+    }
+
+    .section-watch .nav-pills .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .thumb {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .main-header .navbar-brand {
+        font-size: 22px;
+    }
+}
+
+
+
